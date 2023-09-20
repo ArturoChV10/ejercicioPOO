@@ -1,12 +1,32 @@
 package generadorDeCanciones;
 
-public abstract class GenerarConGenero extends generadorDeCanciones {
-	private String Genero;
+public class GenerarConGenero {
+	private String CancionGenero;
 	private String Cancion;
 	
-	public String GenerarConGenero(String pLetra, String pGenero) {
+	public void GenerarCancionConGenero(GenerarConGenero pLetra, String pGenero, String pResultado) {
+		this.setCancionGenero(pResultado);
 		
 	}
 	
-	public abstract String generarCancion(String pLetra);
+	public void generarCancion(String pLetra, String pResultado) {
+		this.setCancion(pResultado);
+		
+	}
+
+	public String getCancionGenero() {
+		return CancionGenero;
+	}
+
+	public void setCancionGenero(String cancionGenero) {
+		CancionGenero = cancionGenero;
+	}
+
+	public String getCancion() {
+		return Cancion;
+	}
+
+	public void setCancion(String cancion) {
+		Cancion = cancion;
+	}
 }
