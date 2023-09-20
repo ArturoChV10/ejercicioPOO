@@ -10,4 +10,8 @@ public class Combinador {
 		//Combina dos generos
 	}
 	
+	public void combinarTresGenero(String pCancion, String pGeneroAdicional1, String pGeneroAdicional2, String pGeneroAdicional3) {
+		//Combina tres generos
+	}
+	
 }
